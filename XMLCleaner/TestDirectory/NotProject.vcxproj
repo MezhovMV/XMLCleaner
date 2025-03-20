@@ -1,0 +1,1892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NotProject DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9CD68929-87FE-46F4-AF92-C79F97EF17C8}</ProjectGuid>
+    <RootNamespace>ewsConfig</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\$(Configuration)_$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\$(Configuration)_$(Platform)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\$(Configuration)_$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\$(Configuration)_$(Platform)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions> /D_X86_=1 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\ODI\Ostore\include;..\..\GMS\lib\;..\..\SSVPARSE\Include;..\..\common;..\..\EWS;..\..\OWS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NO_WARN_MBCS_MFC_DEPRECATION;_USE_32BIT_TIME_T;_EWSCONFIG_EXPORT;_AFXEXT;_AFXDLL;WIN32;_WINDOWS;_DEBUG;CPJNSMTP_NOMXLOOKUP;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);..\..\COMMON;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\gms\lib\gmsnew.lib;muews_client.lib;zlib.lib;gwman.lib;ucosodbc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\ODI\Ostore\Lib;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\$(ProjectName).def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <OutputFile>$(IntDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\ODI_x64\Ostore\include;..\..\GMS_x64\lib\;..\..\WFBPARSE\Include;..\..\common;..\..\COMMON\OpenSSL64\v1.1.0g\include;..\..\EWS;..\..\OWS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NO_WARN_MBCS_MFC_DEPRECATION;_EWSCONFIG_EXPORT;_AFXEXT;_AFXDLL;WIN32;_WINDOWS;_DEBUG;CPJNSMTP_NOMXLOOKUP;_WIN64;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);..\..\COMMON;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\gms_x64\lib\gmsnew.lib;muews_client.lib;zlib.lib;gwman.lib;ucosodbc.lib;libcrypto.lib;libssl.lib;crypt32.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\ODI_x64\Ostore\Lib;..\..\COMMON\OpenSSL64\v1.1.0g\lib;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\$(ProjectName).def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <OutputFile>$(IntDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy ..\..\common\OpenSSL64\v1.1.0g\bin\libssl-1_1-x64.dll $(OutDir)
+copy ..\..\common\OpenSSL64\v1.1.0g\bin\libcrypto-1_1-x64.dll $(OutDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions> /D_X86_=1 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\ODI\Ostore\include;..\..\GMS\lib\;..\..\SSVPARSE\Include;..\..\common;..\..\EWS;..\..\OWS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NO_WARN_MBCS_MFC_DEPRECATION;_USE_32BIT_TIME_T;_EWSCONFIG_EXPORT;_AFXEXT;_AFXDLL;WIN32;_WINDOWS;NDEBUG;CPJNSMTP_NOMXLOOKUP;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);..\..\COMMON;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\gms\lib\gmsnew.lib;muews_client.lib;zlib.lib;gwman.lib;ucosodbc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\ODI\Ostore\Lib;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\$(ProjectName).def</ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <OutputFile>$(IntDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\ODI_x64\Ostore\include;..\..\GMS_x64\lib\;..\..\WFBPARSE\Include;..\..\common;..\..\COMMON\OpenSSL64\v1.1.0g\include;..\..\EWS;..\..\OWS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NO_WARN_MBCS_MFC_DEPRECATION;_EWSCONFIG_EXPORT;_AFXEXT;_AFXDLL;WIN32;_WINDOWS;NDEBUG;CPJNSMTP_NOMXLOOKUP;_WIN64;_BIND_TO_CURRENT_VCLIBS_VERSION;NO_WARN_MBCS_MFC_DEPRECATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);..\..\COMMON;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\gms_x64\lib\gmsnew.lib;muews_client.lib;zlib.lib;gwman.lib;ucosodbc.lib;libcrypto.lib;libssl.lib;crypt32.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\ODI_x64\Ostore\Lib;..\..\COMMON\OpenSSL64\v1.1.0g\lib;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\$(ProjectName).def</ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <OutputFile>$(IntDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>copy ..\..\common\OpenSSL64\v1.1.0g\bin\libssl-1_1-x64.dll $(OutDir)
+copy ..\..\common\OpenSSL64\v1.1.0g\bin\libcrypto-1_1-x64.dll $(OutDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDialogWithVersioning.cpp" />
+    <ClCompile Include="AboutDialogWOutVersioning.cpp" />
+    <ClCompile Include="AddAlarmHeaderDlg.cpp" />
+    <ClCompile Include="AORManager.cpp" />
+    <ClCompile Include="AuditTrail.cpp" />
+    <ClCompile Include="BatchDeviceHelper.cpp" />
+    <ClCompile Include="BatchExportProject.cpp" />
+    <ClCompile Include="bkpointframe.cpp" />
+    <ClCompile Include="cExportDeviceObject.cpp" />
+    <ClCompile Include="cExportDeviceType.cpp" />
+    <ClCompile Include="cExportDialog.cpp" />
+    <ClCompile Include="cExportDialogSummary.cpp" />
+    <ClCompile Include="cExportSupportDevices.cpp" />
+    <ClCompile Include="cExportSupportWildcardTags.cpp" />
+    <ClCompile Include="checkalarmgrp.cpp" />
+    <ClCompile Include="CheckAlarmScreen.cpp" />
+    <ClCompile Include="checkdes.cpp" />
+    <ClCompile Include="checkextension.cpp" />
+    <ClCompile Include="checkfcu.cpp" />
+    <ClCompile Include="checkformula.cpp" />
+    <ClCompile Include="checkhardware.cpp" />
+    <ClCompile Include="CheckLocation.cpp" />
+    <ClCompile Include="checkloggrp.cpp" />
+    <ClCompile Include="checkrange.cpp" />
+    <ClCompile Include="checksymbol.cpp" />
+    <ClCompile Include="cImportExportSupport.cpp" />
+    <ClCompile Include="cImportExportSupportWildcardTags.cpp" />
+    <ClCompile Include="cImportSupportWildcardTags.cpp" />
+    <ClCompile Include="ConfigRetentiveSPMemMap.cpp" />
+    <ClCompile Include="controlText.cpp" />
+    <ClCompile Include="CopyFromWorkstationDlg.cpp" />
+    <ClCompile Include="Crypto.cpp" />
+    <ClCompile Include="DBDownload.cpp" />
+    <ClCompile Include="DefineGraphDataDlg.cpp" />
+    <ClCompile Include="DefineGraphTagsDlg.cpp" />
+    <ClCompile Include="DefineTableTagsDlg.cpp" />
+    <ClCompile Include="DefineTableValueDlg.cpp" />
+    <ClCompile Include="defsel.cpp" />
+    <ClCompile Include="DeviceReferenceDlg.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="DSAccess.cpp" />
+    <ClCompile Include="DSAccessMsg.cpp" />
+    <ClCompile Include="EditAlarmHeaderDlg.cpp" />
+    <ClCompile Include="EditAlarmValueDlg.cpp" />
+    <ClCompile Include="EditColHeaderDlg.cpp" />
+    <ClCompile Include="EditGraphDataSQLDlg.cpp" />
+    <ClCompile Include="EditGraphPenDlg.cpp" />
+    <ClCompile Include="EditGraphTagDlg.cpp" />
+    <ClCompile Include="EditTableFontDlg.cpp" />
+    <ClCompile Include="EditTableTagDlg.cpp" />
+    <ClCompile Include="EditTableValueDlg.cpp" />
+    <ClCompile Include="EditGraphDataTrendDlg.cpp" />
+    <ClCompile Include="EditTrendPointDlg.cpp" />
+    <ClCompile Include="ExportHMI.cpp" />
+    <ClCompile Include="ExportImportStatusDlg.cpp" />
+    <ClCompile Include="ExportMode.cpp" />
+    <ClCompile Include="ExportProject.cpp" />
+    <ClCompile Include="ExternalTrendCnfgDlg.cpp" />
+    <ClCompile Include="ExternalTrends.cpp" />
+    <ClCompile Include="ExtTrendDefConfigDlg.cpp" />
+    <ClCompile Include="FcuProxyConnOrderCache.cpp" />
+    <ClCompile Include="getconfirm.cpp" />
+    <ClCompile Include="getnewpriority.cpp" />
+    <ClCompile Include="getnewsecurity.cpp" />
+    <ClCompile Include="GroupFlagDefaultReg.cpp" />
+    <ClCompile Include="GroupFlagDefaults.cpp" />
+    <ClCompile Include="GroupFlagsPg.cpp" />
+    <ClCompile Include="GUISecurityServer.cpp" />
+    <ClCompile Include="GXml.cpp" />
+    <ClCompile Include="ImportFunction.cpp" />
+    <ClCompile Include="importprocess.cpp" />
+    <ClCompile Include="IOAssignAuditFile.cpp" />
+    <ClCompile Include="IOAssignmentList.cpp" />
+    <ClCompile Include="IOAssignUtil.cpp" />
+    <ClCompile Include="IoImportAssign.cpp" />
+    <ClCompile Include="ModifyIOCardTypeDlg.cpp" />
+    <ClCompile Include="MurmurHash3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="nsImportExportUtility.cpp" />
+    <ClCompile Include="OpenSSLMfc.cpp" />
+    <ClCompile Include="Picture.cpp" />
+    <ClCompile Include="PictureCtrl.cpp" />
+    <ClCompile Include="pointframe.cpp" />
+    <ClCompile Include="RAUserDlg.cpp" />
+    <ClCompile Include="ScriptBison.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ScriptDriver.cpp" />
+    <ClCompile Include="ScriptFlex.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SecurityServer.cpp" />
+    <ClCompile Include="SecurityServerDlg.cpp" />
+    <ClCompile Include="SelectColorDlg.cpp" />
+    <ClCompile Include="SelectColorListCtrl.cpp" />
+    <ClCompile Include="SelectFloatDlg.cpp" />
+    <ClCompile Include="SelectTableGraphInfoDlg.cpp" />
+    <ClCompile Include="SetGraphDlg.cpp" />
+    <ClCompile Include="SetTableDlg.cpp" />
+    <ClCompile Include="ShareImportGarbageCollector.cpp" />
+    <ClCompile Include="SLDynaBison.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SLDynaDriver.cpp" />
+    <ClCompile Include="SLDynaFlex.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StatusProgressBar.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="AdditionalSetting.cpp" />
+    <ClCompile Include="alarm.cpp" />
+    <ClCompile Include="alarmDef.cpp" />
+    <ClCompile Include="alarmGroup.cpp" />
+    <ClCompile Include="alarmPriority.cpp" />
+    <ClCompile Include="analogEnd.cpp" />
+    <ClCompile Include="ArchiverSetting.cpp" />
+    <ClCompile Include="baud.cpp" />
+    <ClCompile Include="ChainDevice.cpp" />
+    <ClCompile Include="channel.cpp" />
+    <ClCompile Include="COLOR.CPP" />
+    <ClCompile Include="command.cpp" />
+    <ClCompile Include="compute.cpp" />
+    <ClCompile Include="ConfigBlob.cpp" />
+    <ClCompile Include="ConfigStream.cpp" />
+    <ClCompile Include="ConnectionSetting.cpp" />
+    <ClCompile Include="control.cpp" />
+    <ClCompile Include="controlAnalog.cpp" />
+    <ClCompile Include="controlDigital.cpp" />
+    <ClCompile Include="controller.cpp" />
+    <ClCompile Include="CWDevicePositions.cpp" />
+    <ClCompile Include="database.cpp" />
+    <ClCompile Include="DdeInterface.cpp" />
+    <ClCompile Include="DdeSource.cpp" />
+    <ClCompile Include="DdeTagDef.cpp" />
+    <ClCompile Include="DetectableGroup.cpp" />
+    <ClCompile Include="device.cpp" />
+    <ClCompile Include="DeviceGroup.cpp" />
+    <ClCompile Include="deviceList.cpp" />
+    <ClCompile Include="deviceName.cpp" />
+    <ClCompile Include="discrete.cpp" />
+    <ClCompile Include="displayPoint.cpp" />
+    <ClCompile Include="EtherChainBlob.cpp" />
+    <ClCompile Include="EtherRackBlob.cpp" />
+    <ClCompile Include="fault.cpp" />
+    <ClCompile Include="fcu.cpp" />
+    <ClCompile Include="FcuDevice.cpp" />
+    <ClCompile Include="GatewayRackBlob.cpp" />
+    <ClCompile Include="groupDisplayDoc.cpp" />
+    <ClCompile Include="groupList.cpp" />
+    <ClCompile Include="hash.cpp" />
+    <ClCompile Include="hilimit.cpp" />
+    <ClCompile Include="hiselect.cpp" />
+    <ClCompile Include="ioCard.cpp" />
+    <ClCompile Include="iolocation.cpp" />
+    <ClCompile Include="ipaddr.cpp" />
+    <ClCompile Include="loggingDevice.cpp" />
+    <ClCompile Include="loggingGroup.cpp" />
+    <ClCompile Include="lolimit.cpp" />
+    <ClCompile Include="loselect.cpp" />
+    <ClCompile Include="mask.cpp" />
+    <ClCompile Include="ModbusModuleBlob.cpp" />
+    <ClCompile Include="ModbusSerRackBlob.cpp" />
+    <ClCompile Include="mode.cpp" />
+    <ClCompile Include="module.cpp" />
+    <ClCompile Include="moduletype.cpp" />
+    <ClCompile Include="MotherboardDiagnosticDevice.cpp" />
+    <ClCompile Include="named.cpp" />
+    <ClCompile Include="NetPrinter.cpp" />
+    <ClCompile Include="node.cpp" />
+    <ClCompile Include="pathmgr.cpp" />
+    <ClCompile Include="point.cpp" />
+    <ClCompile Include="printer.cpp" />
+    <ClCompile Include="process.cpp" />
+    <ClCompile Include="project.cpp" />
+    <ClCompile Include="rack.cpp" />
+    <ClCompile Include="RackDevice.cpp" />
+    <ClCompile Include="racktype.cpp" />
+    <ClCompile Include="range.cpp" />
+    <ClCompile Include="refCountable.cpp" />
+    <ClCompile Include="RockwellModuleBlob.cpp" />
+    <ClCompile Include="RTCProxySetting.cpp" />
+    <ClCompile Include="scanner.cpp" />
+    <ClCompile Include="SelectMultiProjectsDlg.cpp" />
+    <ClCompile Include="setpoint.cpp" />
+    <ClCompile Include="state.cpp" />
+    <ClCompile Include="static.cpp" />
+    <ClCompile Include="StringDevPropDlg.cpp" />
+    <ClCompile Include="switch.cpp" />
+    <ClCompile Include="symbol.cpp" />
+    <ClCompile Include="SynchProc.cpp" />
+    <ClCompile Include="tag.cpp" />
+    <ClCompile Include="tagArray.cpp" />
+    <ClCompile Include="TemplateACE.cpp" />
+    <ClCompile Include="TemplateGraphic.cpp" />
+    <ClCompile Include="TemplateSecurityManager.cpp" />
+    <ClCompile Include="TemplatizedDataManager.cpp" />
+    <ClCompile Include="text.cpp" />
+    <ClCompile Include="tinystr.cpp" />
+    <ClCompile Include="tinyxml.cpp" />
+    <ClCompile Include="tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxmlparser.cpp" />
+    <ClCompile Include="tiodbc.cpp" />
+    <ClCompile Include="TitleTip.cpp" />
+    <ClCompile Include="ToolbarLabel.cpp" />
+    <ClCompile Include="transmitter.cpp" />
+    <ClCompile Include="UACE.cpp" />
+    <ClCompile Include="UAlarmColumn.cpp" />
+    <ClCompile Include="UArea.cpp" />
+    <ClCompile Include="UcosDataSource.cpp" />
+    <ClCompile Include="UCOSFilter.cpp" />
+    <ClCompile Include="UCOSFilterDlg.cpp" />
+    <ClCompile Include="UCOSFiltersDlg.cpp" />
+    <ClCompile Include="UcosRegistry.cpp" />
+    <ClCompile Include="UDevHash.cpp" />
+    <ClCompile Include="UDeviceLocation.cpp" />
+    <ClCompile Include="UGraphDataDef.cpp" />
+    <ClCompile Include="UGraphDataSQL.cpp" />
+    <ClCompile Include="UGraphDataTrend.cpp" />
+    <ClCompile Include="UGraphPen.cpp" />
+    <ClCompile Include="UGraphTagDef.cpp" />
+    <ClCompile Include="UListCtrl.cpp" />
+    <ClCompile Include="ULLDPreset.cpp" />
+    <ClCompile Include="UMasterStationSupport.cpp" />
+    <ClCompile Include="UMultiUserSupport.cpp" />
+    <ClCompile Include="UObserver.cpp" />
+    <ClCompile Include="UProjectMgr.cpp" />
+    <ClCompile Include="UString.cpp" />
+    <ClCompile Include="UStringDev.cpp" />
+    <ClCompile Include="UTableColumn.cpp" />
+    <ClCompile Include="UTableTagDef.cpp" />
+    <ClCompile Include="UTableValueAlarm.cpp" />
+    <ClCompile Include="UTableValueDef.cpp" />
+    <ClCompile Include="UTableValueSQL.cpp" />
+    <ClCompile Include="UTrendPoint.cpp" />
+    <ClCompile Include="VirtualChainBlob.cpp" />
+    <ClCompile Include="wildcard.cpp" />
+    <ClCompile Include="WildcardList.cpp" />
+    <ClCompile Include="WildcardOut.cpp" />
+    <ClCompile Include="WildcardReportDlg.cpp" />
+    <ClCompile Include="WildResProgress.cpp" />
+    <ClCompile Include="WndResizer.cpp" />
+    <ClCompile Include="workstation.cpp" />
+    <ClCompile Include="GraphicResMgr.cpp" />
+    <ClCompile Include="UANALOGENDCONNECTABLE.CPP" />
+    <ClCompile Include="UBITMAP.CPP" />
+    <ClCompile Include="UBranchLine.cpp" />
+    <ClCompile Include="UCONNECTABLE.CPP" />
+    <ClCompile Include="UCONTROLPOINT.CPP" />
+    <ClCompile Include="UDEVICEOUTPUTCONNECTABLE.CPP" />
+    <ClCompile Include="UDRAWABLE.CPP" />
+    <ClCompile Include="UELLIPSE.CPP" />
+    <ClCompile Include="UGrid.cpp" />
+    <ClCompile Include="UINPUTCONNECTABLE.CPP" />
+    <ClCompile Include="ULineSegment.cpp" />
+    <ClCompile Include="UMECHANICALCONNECTABLE.CPP" />
+    <ClCompile Include="UOUTPUTCONNECTABLE.CPP" />
+    <ClCompile Include="UPOLYLINE.CPP" />
+    <ClCompile Include="UPROCESSVARIABLECONNECTABLE.CPP" />
+    <ClCompile Include="URECT.CPP" />
+    <ClCompile Include="USETPOINTCONNECTABLE.CPP" />
+    <ClCompile Include="USHAPE.CPP" />
+    <ClCompile Include="USTATICCONNECTABLE.CPP" />
+    <ClCompile Include="UTextSymbol.cpp" />
+    <ClCompile Include="UX1CONNECTABLE.CPP" />
+    <ClCompile Include="UX2CONNECTABLE.CPP" />
+    <ClCompile Include="UX3CONNECTABLE.CPP" />
+    <ClCompile Include="BaseAlPg.cpp" />
+    <ClCompile Include="BaseCommandPg.cpp" />
+    <ClCompile Include="BaseCtrlAnalogPg.cpp" />
+    <ClCompile Include="BaseCtrlDigitalPg.cpp" />
+    <ClCompile Include="BaseDevicePage.cpp" />
+    <ClCompile Include="BaseModePg.cpp" />
+    <ClCompile Include="BaseStatePg.cpp" />
+    <ClCompile Include="BaseTab.cpp" />
+    <ClCompile Include="bsetptpg.cpp" />
+    <ClCompile Include="clonedlg.cpp" />
+    <ClCompile Include="RenameExtDlg.cpp" />
+    <ClCompile Include="staticdlg2.cpp" />
+    <ClCompile Include="UChainTagEditor.cpp" />
+    <ClCompile Include="UCompDevicePage.cpp" />
+    <ClCompile Include="UCONTROLLERSYMBOL.CPP" />
+    <ClCompile Include="UCONTROLLERTAB.CPP" />
+    <ClCompile Include="uctlrcommandpage.cpp" />
+    <ClCompile Include="uctlrdevicepage.cpp" />
+    <ClCompile Include="UDIAGRAM.CPP" />
+    <ClCompile Include="UDIAGRAMLIST.CPP" />
+    <ClCompile Include="UDIBSymbol.cpp" />
+    <ClCompile Include="UDiscreteSymbol.cpp" />
+    <ClCompile Include="ueditalarmspg.cpp" />
+    <ClCompile Include="UEditCommandsPage.cpp" />
+    <ClCompile Include="ueditfaultspg.cpp" />
+    <ClCompile Include="ufcutageditor.cpp" />
+    <ClCompile Include="UFUNCTIONSYMBOL.CPP" />
+    <ClCompile Include="UFUNCTIONTAB.CPP" />
+    <ClCompile Include="UHILIMITSYMBOL.CPP" />
+    <ClCompile Include="UHILIMITTAB.CPP" />
+    <ClCompile Include="UHISELECTSYMBOL.CPP" />
+    <ClCompile Include="UHISELECTTAB.CPP" />
+    <ClCompile Include="UHLimDevicePage.cpp" />
+    <ClCompile Include="UHSelDevicePage.cpp" />
+    <ClCompile Include="uinsertswitchdlg.cpp" />
+    <ClCompile Include="ULLimDevicePage.cpp" />
+    <ClCompile Include="ULOLIMITSYMBOL.CPP" />
+    <ClCompile Include="ULOLIMITTAB.CPP" />
+    <ClCompile Include="ULOSELECTSYMBOL.CPP" />
+    <ClCompile Include="ULOSELECTTAB.CPP" />
+    <ClCompile Include="ULSelDevicePage.cpp" />
+    <ClCompile Include="UMotherboardDevicePage.cpp" />
+    <ClCompile Include="UMotherboardTab.cpp" />
+    <ClCompile Include="uracktageditor.cpp" />
+    <ClCompile Include="UStaticSymbol.cpp" />
+    <ClCompile Include="USwitchDevicePage.cpp" />
+    <ClCompile Include="USWITCHSYMBOL.CPP" />
+    <ClCompile Include="USWITCHTAB.CPP" />
+    <ClCompile Include="USymbolManager.cpp" />
+    <ClCompile Include="UTRANSMITTERSYMBOL.CPP" />
+    <ClCompile Include="UTRANSMITTERTAB.CPP" />
+    <ClCompile Include="uxmitdevicepage.cpp" />
+    <ClCompile Include="cntrdlg.cpp" />
+    <ClCompile Include="ControlLUTDlg.cpp" />
+    <ClCompile Include="ControlSTCFDlg.cpp" />
+    <ClCompile Include="DevBitmaps.cpp" />
+    <ClCompile Include="dlganalogmathprop.cpp" />
+    <ClCompile Include="DlgAPICalculationsProp.cpp" />
+    <ClCompile Include="DlgControlProp.cpp" />
+    <ClCompile Include="DlgConversionBINProp.cpp" />
+    <ClCompile Include="DlgConversionProp.cpp" />
+    <ClCompile Include="dlgmuxdemux.cpp" />
+    <ClCompile Include="DlgSelectionProp.cpp" />
+    <ClCompile Include="DlgStatisticalProp.cpp" />
+    <ClCompile Include="dlgtodprop.cpp" />
+    <ClCompile Include="ImportVerification.cpp" />
+    <ClCompile Include="logicdlg.cpp" />
+    <ClCompile Include="RefCountClinic.cpp" />
+    <ClCompile Include="sigmdlg.cpp" />
+    <ClCompile Include="TagRefRpt.cpp" />
+    <ClCompile Include="timerdlg.cpp" />
+    <ClCompile Include="uanalogmath.cpp" />
+    <ClCompile Include="UAnalogMath_abs.cpp" />
+    <ClCompile Include="UAnalogMath_acos.cpp" />
+    <ClCompile Include="uanalogmath_add.cpp" />
+    <ClCompile Include="UAnalogMath_asin.cpp" />
+    <ClCompile Include="UAnalogMath_atan.cpp" />
+    <ClCompile Include="UAnalogMath_cos.cpp" />
+    <ClCompile Include="uanalogmath_divide.cpp" />
+    <ClCompile Include="UAnalogMath_exp.cpp" />
+    <ClCompile Include="uanalogmath_ln.cpp" />
+    <ClCompile Include="UAnalogMath_log.cpp" />
+    <ClCompile Include="uanalogmath_modulus.cpp" />
+    <ClCompile Include="uanalogmath_multiply.cpp" />
+    <ClCompile Include="UAnalogMath_sin.cpp" />
+    <ClCompile Include="uanalogmath_sqr.cpp" />
+    <ClCompile Include="uanalogmath_subtract.cpp" />
+    <ClCompile Include="UAnalogMath_tan.cpp" />
+    <ClCompile Include="uanalogmath_ytox.cpp" />
+    <ClCompile Include="UANDGATE.CPP" />
+    <ClCompile Include="UAPICalculations.cpp" />
+    <ClCompile Include="UCOMMANDINPUT.CPP" />
+    <ClCompile Include="UComment.cpp" />
+    <ClCompile Include="UControlFunc.cpp" />
+    <ClCompile Include="UControlFunc_DER.cpp" />
+    <ClCompile Include="UControlFunc_DEV.cpp" />
+    <ClCompile Include="UControlFunc_FIFO.cpp" />
+    <ClCompile Include="UControlFunc_HYST.cpp" />
+    <ClCompile Include="UControlFunc_INT.cpp" />
+    <ClCompile Include="UControlFunc_LDLG.cpp" />
+    <ClCompile Include="UControlFunc_LIFO.cpp" />
+    <ClCompile Include="UControlFunc_LUT.cpp" />
+    <ClCompile Include="UControlFunc_MAVG.cpp" />
+    <ClCompile Include="UControlFunc_RAMP.cpp" />
+    <ClCompile Include="UControlFunc_RATIO_MON.cpp" />
+    <ClCompile Include="UControlFunc_STCF.cpp" />
+    <ClCompile Include="UControlFunc_SUP_COMPR.cpp" />
+    <ClCompile Include="UControlFunc_TOT.cpp" />
+    <ClCompile Include="UControlFunc_WSUM.cpp" />
+    <ClCompile Include="UConversion.cpp" />
+    <ClCompile Include="UConversion_BCD_BIN.cpp" />
+    <ClCompile Include="UConversion_BIN_BCD.cpp" />
+    <ClCompile Include="UConversion_BIN_INT.cpp" />
+    <ClCompile Include="UConversion_INT_BIN.cpp" />
+    <ClCompile Include="UConversion_Precision.cpp" />
+    <ClCompile Include="UConversion_Truncate.cpp" />
+    <ClCompile Include="UCOUNTER.CPP" />
+    <ClCompile Include="udemux1to4.cpp" />
+    <ClCompile Include="UDOWNCOUNTER.CPP" />
+    <ClCompile Include="UEdgeCheckOneShot.CPP" />
+    <ClCompile Include="UINPUTTAG.CPP" />
+    <ClCompile Include="UINTERNALINPUT.CPP" />
+    <ClCompile Include="UINTERNALOUTPUT.CPP" />
+    <ClCompile Include="UINVERTER.CPP" />
+    <ClCompile Include="UIOTAG.CPP" />
+    <ClCompile Include="ULatch.CPP" />
+    <ClCompile Include="ULDView.cpp" />
+    <ClCompile Include="ULeadingEdgeOneShot.CPP" />
+    <ClCompile Include="ULOGIC.CPP" />
+    <ClCompile Include="ULOGICGATE.CPP" />
+    <ClCompile Include="ULoLevDev.cpp" />
+    <ClCompile Include="umux1of4.cpp" />
+    <ClCompile Include="umuxdemux.cpp" />
+    <ClCompile Include="UNANDGATE.CPP" />
+    <ClCompile Include="UNORGATE.CPP" />
+    <ClCompile Include="UORGATE.CPP" />
+    <ClCompile Include="UOtherInput.cpp" />
+    <ClCompile Include="UOtherOutput.cpp" />
+    <ClCompile Include="UOUTPUTTAG.CPP" />
+    <ClCompile Include="UREALINPUT.CPP" />
+    <ClCompile Include="UREALOUTPUT.CPP" />
+    <ClCompile Include="USelectionFunc.cpp" />
+    <ClCompile Include="USelectionFunc_LIM.cpp" />
+    <ClCompile Include="USelectionFunc_MAX.cpp" />
+    <ClCompile Include="USelectionFunc_MIN.cpp" />
+    <ClCompile Include="USETPOINTINPUT.CPP" />
+    <ClCompile Include="USigMon_GE.cpp" />
+    <ClCompile Include="USigMon_LE.cpp" />
+    <ClCompile Include="USigMon_NE.cpp" />
+    <ClCompile Include="USIGMONEQ.CPP" />
+    <ClCompile Include="USIGMONGT.CPP" />
+    <ClCompile Include="USIGMONLT.CPP" />
+    <ClCompile Include="USIGNALMONITOR.CPP" />
+    <ClCompile Include="USKEMA.CPP" />
+    <ClCompile Include="USKEMAGROUP.CPP" />
+    <ClCompile Include="UStatisticalFunc.cpp" />
+    <ClCompile Include="UStatisticalFunc_AVG.cpp" />
+    <ClCompile Include="UStatisticalFunc_MAX.cpp" />
+    <ClCompile Include="UStatisticalFunc_MIN.cpp" />
+    <ClCompile Include="UtDI.cpp" />
+    <ClCompile Include="UTDT.CPP" />
+    <ClCompile Include="UTemplatizedLogicSupport.cpp" />
+    <ClCompile Include="UTemplatizedLogicSupportOLD.cpp" />
+    <ClCompile Include="UTIMER.CPP" />
+    <ClCompile Include="UTODClock.cpp" />
+    <ClCompile Include="UTPO.CPP" />
+    <ClCompile Include="UtR.cpp" />
+    <ClCompile Include="UTrailingEdgeOneShot.CPP" />
+    <ClCompile Include="UTriggerMove.cpp" />
+    <ClCompile Include="UUNDEFINEDINPUT.CPP" />
+    <ClCompile Include="UUndefinedOutput.CPP" />
+    <ClCompile Include="UUPCOUNTER.CPP" />
+    <ClCompile Include="UXNORGATE.CPP" />
+    <ClCompile Include="UXORGATE.CPP" />
+    <ClCompile Include="CmdWndDef.cpp" />
+    <ClCompile Include="CmdWndMap.cpp" />
+    <ClCompile Include="CmdWndMgr.cpp" />
+    <ClCompile Include="CmdWndTagDef.cpp" />
+    <ClCompile Include="ColorManager.cpp" />
+    <ClCompile Include="Error.cpp" />
+    <ClCompile Include="ExecutionDef.cpp" />
+    <ClCompile Include="ExpTree.cpp" />
+    <ClCompile Include="FKeyActionDef.cpp" />
+    <ClCompile Include="FKeyActionDefGroup.cpp" />
+    <ClCompile Include="FKeyActionDefManager.cpp" />
+    <ClCompile Include="FunctionDefs.cpp" />
+    <ClCompile Include="GlDataType.cpp" />
+    <ClCompile Include="GlTagDef.cpp" />
+    <ClCompile Include="GMS_INTERFACE.CPP" />
+    <ClCompile Include="gms_view.cpp" />
+    <ClCompile Include="GMSRenameHelper.cpp" />
+    <ClCompile Include="GraphicsScreen.cpp" />
+    <ClCompile Include="GroupScreenDef.cpp" />
+    <ClCompile Include="GrphicRoot.cpp" />
+    <ClCompile Include="GTagMap.cpp" />
+    <ClCompile Include="Position.cpp" />
+    <ClCompile Include="RestrictedAlarmsDef.cpp" />
+    <ClCompile Include="ReturnType.cpp" />
+    <ClCompile Include="Script.cpp" />
+    <ClCompile Include="ScriptDef.cpp" />
+    <ClCompile Include="ScriptDefGroup.cpp" />
+    <ClCompile Include="ScriptDefManager.cpp" />
+    <ClCompile Include="SecurityGroup.cpp" />
+    <ClCompile Include="SecurityManager.cpp" />
+    <ClCompile Include="SecurityProfile.cpp" />
+    <ClCompile Include="SecurityUser.cpp" />
+    <ClCompile Include="SLGMSFontMgr.cpp" />
+    <ClCompile Include="SLReplacementFunctions.cpp" />
+    <ClCompile Include="strutils.cpp" />
+    <ClCompile Include="TagCollection.cpp" />
+    <ClCompile Include="TagDB.cpp" />
+    <ClCompile Include="TagSetCollection.cpp" />
+    <ClCompile Include="TagSetDef.cpp" />
+    <ClCompile Include="tagvaluedlg.cpp" />
+    <ClCompile Include="TrendCollection.cpp" />
+    <ClCompile Include="TrendDef.cpp" />
+    <ClCompile Include="UcosGms.cpp" />
+    <ClCompile Include="AddAlarmGroupDlg.cpp" />
+    <ClCompile Include="AddDetectableGroupDlg.cpp" />
+    <ClCompile Include="AddDeviceGroupDlg.cpp" />
+    <ClCompile Include="AlarmGroupsTagListDlg.cpp" />
+    <ClCompile Include="AssignDeviceToDeviceGroupDlg.cpp" />
+    <ClCompile Include="bkmoddlg.cpp" />
+    <ClCompile Include="ConfigDeviceGroupDlg.cpp" />
+    <ClCompile Include="CopyMouseButtonConfigDlg.cpp" />
+    <ClCompile Include="DataValidationFunctions.cpp" />
+    <ClCompile Include="DeleteDetectableGroupDlg.cpp" />
+    <ClCompile Include="DeleteDeviceGroupDlg.cpp" />
+    <ClCompile Include="DetectableGroupsDlg.cpp" />
+    <ClCompile Include="DetectableGroupUtil.cpp" />
+    <ClCompile Include="DeviceDeletionFailure.cpp" />
+    <ClCompile Include="DeviceRefDlg.cpp" />
+    <ClCompile Include="EditEtherChainDlg.cpp" />
+    <ClCompile Include="EditModbusRack.cpp" />
+    <ClCompile Include="ExportMouseButtonConfigDlg.cpp" />
+    <ClCompile Include="FilesWithDetectableGroupDlg.cpp" />
+    <ClCompile Include="FilterListCtrl.cpp" />
+    <ClCompile Include="GwayGuiIface.cpp" />
+    <ClCompile Include="GwayStatusDlg.cpp" />
+    <ClCompile Include="hdmdlg.cpp" />
+    <ClCompile Include="ImportMouseButtonConfigDlg.cpp" />
+    <ClCompile Include="IoAssignmentDef.cpp" />
+    <ClCompile Include="IoAssignmentDlg.cpp" />
+    <ClCompile Include="IPEditWithTab.cpp" />
+    <ClCompile Include="LogGroupsTagListDlg.cpp" />
+    <ClCompile Include="MessageBoxDlg.cpp" />
+    <ClCompile Include="ModbusPointDlg.cpp" />
+    <ClCompile Include="ModbusPointSource.cpp" />
+    <ClCompile Include="modulecache.cpp" />
+    <ClCompile Include="MouseButtonConfigDlg.cpp" />
+    <ClCompile Include="msgbox.cpp" />
+    <ClCompile Include="new_chain.cpp" />
+    <ClCompile Include="new_fcu.cpp" />
+    <ClCompile Include="new_iocard.cpp" />
+    <ClCompile Include="new_location.cpp" />
+    <ClCompile Include="new_module.cpp" />
+    <ClCompile Include="new_rack.cpp" />
+    <ClCompile Include="new_root.cpp" />
+    <ClCompile Include="NewAddLoggingGroupDlg.cpp" />
+    <ClCompile Include="NewAlarmGroups.cpp" />
+    <ClCompile Include="NewDeleteAlarmGroupsDlg.cpp" />
+    <ClCompile Include="NewDeleteLoggingGroup.cpp" />
+    <ClCompile Include="NewEditLoggingDeviceDlg.cpp" />
+    <ClCompile Include="NewLoggingDevicesDlg.cpp" />
+    <ClCompile Include="NewLoggingGroupDlg.cpp" />
+    <ClCompile Include="newmodulecache.cpp" />
+    <ClCompile Include="NewPointDlg.cpp" />
+    <ClCompile Include="NewRenameAlarmGroup.cpp" />
+    <ClCompile Include="NewRenameLoggingGroupDlg.cpp" />
+    <ClCompile Include="node_chain.cpp" />
+    <ClCompile Include="node_channel.cpp" />
+    <ClCompile Include="node_fcu.cpp" />
+    <ClCompile Include="node_iocard.cpp" />
+    <ClCompile Include="node_location.cpp" />
+    <ClCompile Include="node_module.cpp" />
+    <ClCompile Include="node_moduletype.cpp" />
+    <ClCompile Include="node_rack.cpp" />
+    <ClCompile Include="node_root.cpp" />
+    <ClCompile Include="nodectrl.cpp" />
+    <ClCompile Include="page_chain.cpp" />
+    <ClCompile Include="page_channel.cpp" />
+    <ClCompile Include="page_fcu.cpp" />
+    <ClCompile Include="page_iocard.cpp" />
+    <ClCompile Include="page_location.cpp" />
+    <ClCompile Include="page_module.cpp" />
+    <ClCompile Include="page_rack.cpp" />
+    <ClCompile Include="page_root.cpp" />
+    <ClCompile Include="pointdlg.cpp" />
+    <ClCompile Include="RenameDetectableGroupDlg.cpp" />
+    <ClCompile Include="RenameDeviceGroupDlg.cpp" />
+    <ClCompile Include="ResolveImportDlg.cpp" />
+    <ClCompile Include="RockwellBlobDlg.cpp" />
+    <ClCompile Include="RTCommsProxySvrsCfgDlg.cpp" />
+    <ClCompile Include="RTCommsProxySvrsTimeoutsDlg.cpp" />
+    <ClCompile Include="ScadaCommsSettingsDlg.cpp" />
+    <ClCompile Include="ScreenPropertiesDlg.cpp" />
+    <ClCompile Include="SelectPointsDlg.cpp" />
+    <ClCompile Include="SelectTagsDlg.cpp" />
+    <ClCompile Include="selecttemplatedlg.cpp" />
+    <ClCompile Include="ServerNodeDlg.cpp" />
+    <ClCompile Include="sheet_modal.cpp" />
+    <ClCompile Include="SlaveDef.cpp" />
+    <ClCompile Include="SortClass.cpp" />
+    <ClCompile Include="tree.cpp" />
+    <ClCompile Include="treenode.cpp" />
+    <ClCompile Include="wildres.cpp" />
+    <ClCompile Include="WorkstationsDlg.cpp" />
+    <ClCompile Include="aboutdialog.cpp" />
+    <ClCompile Include="activeusers.cpp" />
+    <ClCompile Include="AGPDCacheFile.cpp" />
+    <ClCompile Include="BaseDDListCtrl.cpp" />
+    <ClCompile Include="BitmapUtil.cpp" />
+    <ClCompile Include="ChangePassword.cpp" />
+    <ClCompile Include="CheckGenerateRuntimeFlag.cpp" />
+    <ClCompile Include="CommandLine.cpp" />
+    <ClCompile Include="CompressedFileUtil.cpp" />
+    <ClCompile Include="copystat.cpp" />
+    <ClCompile Include="CopyUtil.cpp" />
+    <ClCompile Include="CPYSTLST.CPP" />
+    <ClCompile Include="CreateProj.cpp" />
+    <ClCompile Include="customddv.cpp" />
+    <ClCompile Include="customedit.cpp" />
+    <ClCompile Include="ddlistctrl.cpp" />
+    <ClCompile Include="DownloadOWSUsers.cpp" />
+    <ClCompile Include="DownloadRuntime.cpp" />
+    <ClCompile Include="EncMsgDef.cpp" />
+    <ClCompile Include="FileOperation.cpp" />
+    <ClCompile Include="GenRTFiles.cpp" />
+    <ClCompile Include="HelperFunctions.cpp" />
+    <ClCompile Include="ImportUtil.cpp" />
+    <ClCompile Include="IniEx.cpp" />
+    <ClCompile Include="ipaddrctl.cpp" />
+    <ClCompile Include="ipeditbox.cpp" />
+    <ClCompile Include="ipmaskeditbox.cpp" />
+    <ClCompile Include="IPSubEdit.cpp" />
+    <ClCompile Include="IPVerify.cpp" />
+    <ClCompile Include="licensecodedlg.cpp" />
+    <ClCompile Include="LicenseManager.cpp" />
+    <ClCompile Include="LogArchiveData.cpp" />
+    <ClCompile Include="loginuser.cpp" />
+    <ClCompile Include="MEMMAPPEDFILE.CPP" />
+    <ClCompile Include="MessageDialog.cpp" />
+    <ClCompile Include="MMFILE.CPP" />
+    <ClCompile Include="MultiProjectRuntimeManager.cpp" />
+    <ClCompile Include="PageAlertConfigFile.cpp" />
+    <ClCompile Include="PJNNTLMAuth.cpp" />
+    <ClCompile Include="PJNSMTP.cpp" />
+    <ClCompile Include="PrintListCtrl.cpp" />
+    <ClCompile Include="RefProject.cpp" />
+    <ClCompile Include="RegAccess.cpp" />
+    <ClCompile Include="RegAccessLocal.cpp" />
+    <ClCompile Include="RegAccessMsg.cpp" />
+    <ClCompile Include="RegAccessRemote.cpp" />
+    <ClCompile Include="RemoteDatabases.cpp" />
+    <ClCompile Include="RTTagCache.cpp" />
+    <ClCompile Include="RTTagCacheBuilder.cpp" />
+    <ClCompile Include="RTTagCacheDefs.cpp" />
+    <ClCompile Include="RuntimeProcessInstance.cpp" />
+    <ClCompile Include="RuntimeSharedMem.cpp" />
+    <ClCompile Include="ScreenHtmlFile.cpp" />
+    <ClCompile Include="SocMFC.cpp" />
+    <ClCompile Include="SSHeaderCtrl.cpp" />
+    <ClCompile Include="SSListCtrl.cpp" />
+    <ClCompile Include="SSPIAuthentication.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StatusDlg.cpp" />
+    <ClCompile Include="ToolTipDlg.cpp" />
+    <ClCompile Include="UCOSAppManagerConnection.cpp" />
+    <ClCompile Include="UCOSComboBox.cpp" />
+    <ClCompile Include="UCOSListBox.cpp" />
+    <ClCompile Include="ucosreg.cpp" />
+    <ClCompile Include="UcosRegistryFlags.cpp" />
+    <ClCompile Include="UIThread.cpp" />
+    <ClCompile Include="unicode.cpp" />
+    <ClCompile Include="UpdateStatus.cpp" />
+    <ClCompile Include="Uping.cpp" />
+    <ClCompile Include="UserManager.cpp" />
+    <ClCompile Include="ValidateProductSuite.cpp" />
+    <ClCompile Include="ValidateUserDlg.cpp" />
+    <ClCompile Include="XmlTree.cpp" />
+    <ClCompile Include="ZipLib.cpp" />
+    <ClCompile Include="zlibengn.cpp" />
+    <ClCompile Include="zoomview.cpp" />
+    <ClCompile Include="BitmapSizeDlg.cpp" />
+    <ClCompile Include="PaintBlock.cpp" />
+    <ClCompile Include="paintbox.cpp" />
+    <ClCompile Include="pixedit.cpp" />
+    <ClCompile Include="SEditDlg.cpp" />
+    <ClCompile Include="symeditor.cpp" />
+    <ClCompile Include="symeditw.cpp" />
+    <ClCompile Include="ubitsym.cpp" />
+    <ClCompile Include="uconnectabledefwnd.cpp" />
+    <ClCompile Include="uconnectableedit.cpp" />
+    <ClCompile Include="uconnectableeditor.cpp" />
+    <ClCompile Include="udib.cpp" />
+    <ClCompile Include="UGDISymbol.cpp" />
+    <ClCompile Include="UPalette.cpp" />
+    <ClCompile Include="USelectWnd.cpp" />
+    <ClCompile Include="ViewPort.cpp" />
+    <ClCompile Include="wndtracker.cpp" />
+    <ClCompile Include="ArchiverHealthSettingsDlg.cpp" />
+    <ClCompile Include="ArchiverSettingDlg.cpp" />
+    <ClCompile Include="CopyArchiverSettingsDlg.cpp" />
+    <ClCompile Include="EditMaximumUpdateRateDlg.cpp" />
+    <ClCompile Include="GUIFCU.CPP" />
+    <ClCompile Include="GUINetPrinter.cpp" />
+    <ClCompile Include="guinode.cpp" />
+    <ClCompile Include="GUIWORKSTATION.CPP" />
+    <ClCompile Include="pcdlg.cpp" />
+    <ClCompile Include="prtdlg.cpp" />
+    <ClCompile Include="TimeoutsAndUpdateRatesDlg.cpp" />
+    <ClCompile Include="UEWS.CPP" />
+    <ClCompile Include="UNETWORK.CPP" />
+    <ClCompile Include="unetworks.cpp" />
+    <ClCompile Include="updbm.cpp" />
+    <ClCompile Include="uprt.cpp" />
+    <ClCompile Include="DnldBlank.cpp" />
+    <ClCompile Include="DnldChainDevice.cpp" />
+    <ClCompile Include="DnldCompute.cpp" />
+    <ClCompile Include="DnldController.cpp" />
+    <ClCompile Include="DnldDevice.cpp" />
+    <ClCompile Include="DnldDiscrete.cpp" />
+    <ClCompile Include="DnldFcuDevice.cpp" />
+    <ClCompile Include="DnldHiLimit.cpp" />
+    <ClCompile Include="DnldHiSelect.cpp" />
+    <ClCompile Include="DnldLoLimit.cpp" />
+    <ClCompile Include="DnldLoSelect.cpp" />
+    <ClCompile Include="DnldMotherboardDiagDevice.cpp" />
+    <ClCompile Include="DnldRackDevice.cpp" />
+    <ClCompile Include="DnldSocket.cpp" />
+    <ClCompile Include="dnldstat.cpp" />
+    <ClCompile Include="DnldSwitch.cpp" />
+    <ClCompile Include="DnldTransmitter.cpp" />
+    <ClCompile Include="DownLoader.cpp" />
+    <ClCompile Include="InToPost.cpp" />
+    <ClCompile Include="RenumberHelper.cpp" />
+    <ClCompile Include="Toker.cpp" />
+    <ClCompile Include="UDownload.cpp" />
+    <ClCompile Include="CompressedDownload_ZipLib.cpp" />
+    <ClCompile Include="addscriptdlg.cpp" />
+    <ClCompile Include="CallDynamicsPg.cpp" />
+    <ClCompile Include="chggriddlg.cpp" />
+    <ClCompile Include="CmdWindowDlg.cpp" />
+    <ClCompile Include="ColorButton.cpp" />
+    <ClCompile Include="CustomFontDlg.cpp" />
+    <ClCompile Include="DDX_SL.cpp" />
+    <ClCompile Include="DefineLocalTags.cpp" />
+    <ClCompile Include="DetectableDynamicInfo.cpp" />
+    <ClCompile Include="DetectableDynamicInfoEdit.cpp" />
+    <ClCompile Include="DetectablePage.cpp" />
+    <ClCompile Include="DeviceGms.cpp" />
+    <ClCompile Include="DeviceScreenGms.cpp" />
+    <ClCompile Include="DynamicsSheet.cpp" />
+    <ClCompile Include="DynamicString.cpp" />
+    <ClCompile Include="EditorGms.cpp" />
+    <ClCompile Include="ExecuteDlg.cpp" />
+    <ClCompile Include="executiondefdlg.cpp" />
+    <ClCompile Include="ExpressionEditBox.cpp" />
+    <ClCompile Include="ExpressionEditDlg.cpp" />
+    <ClCompile Include="FillDirectionComboBox.cpp" />
+    <ClCompile Include="FillDynamicsPg.cpp" />
+    <ClCompile Include="FillInteriorComboBox.cpp" />
+    <ClCompile Include="FillPatternButton.cpp" />
+    <ClCompile Include="FillPatternDlg.cpp" />
+    <ClCompile Include="GeneralDynamicsPg.cpp" />
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="GradientFillDlg.cpp" />
+    <ClCompile Include="gridprop.cpp" />
+    <ClCompile Include="linebox.cpp" />
+    <ClCompile Include="MaskCombo.cpp" />
+    <ClCompile Include="ModPropDlg.cpp" />
+    <ClCompile Include="newscriptdlg.cpp" />
+    <ClCompile Include="openscriptdlg.cpp" />
+    <ClCompile Include="RefreshDynamicsPage.cpp" />
+    <ClCompile Include="RotateDynamicDlg.cpp" />
+    <ClCompile Include="ScaleDynamicDlg.cpp" />
+    <ClCompile Include="scalrotdlg.cpp" />
+    <ClCompile Include="ScreenGms.cpp" />
+    <ClCompile Include="scripteditor.cpp" />
+    <ClCompile Include="SelActionTypeDlg.cpp" />
+    <ClCompile Include="selbmpdlg.cpp" />
+    <ClCompile Include="SelectDetectableGroupDlg.cpp" />
+    <ClCompile Include="SelectLocalTag.cpp" />
+    <ClCompile Include="SelectTagDlg.cpp" />
+    <ClCompile Include="SelectWorkstationDlg.cpp" />
+    <ClCompile Include="SelRuntimeAppDlg.cpp" />
+    <ClCompile Include="SetTagDlg.cpp" />
+    <ClCompile Include="SLExpTree.cpp" />
+    <ClCompile Include="SLStyleBox.cpp" />
+    <ClCompile Include="stylebox.cpp" />
+    <ClCompile Include="TagEditBox.cpp" />
+    <ClCompile Include="TagFloat32.cpp" />
+    <ClCompile Include="TagFloat64.cpp" />
+    <ClCompile Include="TagInt.cpp" />
+    <ClCompile Include="TagStr.cpp" />
+    <ClCompile Include="TagType.cpp" />
+    <ClCompile Include="TagUInt32.cpp" />
+    <ClCompile Include="TemplateGms.cpp" />
+    <ClCompile Include="TemplateScreenGms.cpp" />
+    <ClCompile Include="TextDynamicsPg.cpp" />
+    <ClCompile Include="TextValueDlg.cpp" />
+    <ClCompile Include="toolbarsdlg.cpp" />
+    <ClCompile Include="TransformationDynamicsPg.cpp" />
+    <ClCompile Include="TranslateDynamicDlg.cpp" />
+    <ClCompile Include="userprefdlg.cpp" />
+    <ClCompile Include="Validator.cpp" />
+    <ClCompile Include="WindowActionDlg.cpp" />
+    <ClCompile Include="addgtag.cpp" />
+    <ClCompile Include="BaseCtrl.cpp" />
+    <ClCompile Include="colorcombobox.cpp" />
+    <ClCompile Include="ConfigTagSetDlg.cpp" />
+    <ClCompile Include="configurecmddlg.cpp" />
+    <ClCompile Include="configuretagdlg.cpp" />
+    <ClCompile Include="confirm.cpp" />
+    <ClCompile Include="CustomButton.cpp" />
+    <ClCompile Include="EditWndChildBase.cpp" />
+    <ClCompile Include="grpaction.cpp" />
+    <ClCompile Include="opencmdwnddlg.cpp" />
+    <ClCompile Include="stylecombobox.cpp" />
+    <ClCompile Include="trendpropertypage.cpp" />
+    <ClCompile Include="trendpropertysheet.cpp" />
+    <ClCompile Include="TrendPropPage.cpp" />
+    <ClCompile Include="TrendPropSheet.cpp" />
+    <ClCompile Include="trendtagspage.cpp" />
+    <ClCompile Include="TrendTagsPropPage.cpp" />
+    <ClCompile Include="trendwnd.cpp" />
+    <ClCompile Include="UPen.cpp" />
+    <ClCompile Include="winstyle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ewsConfig.def" />
+    <None Include="res\4arrow.cur" />
+    <None Include="res\aeb.cur" />
+    <None Include="res\ael.cur" />
+    <None Include="res\aer.cur" />
+    <None Include="res\aet.cur" />
+    <None Include="res\AnalogMath_ABS.bmp" />
+    <None Include="res\AnalogMath_ACOS.bmp" />
+    <None Include="res\analogmath_add.bmp" />
+    <None Include="res\AnalogMath_ASIN.bmp" />
+    <None Include="res\AnalogMath_ATAN.bmp" />
+    <None Include="res\AnalogMath_COS.bmp" />
+    <None Include="res\analogmath_divide.bmp" />
+    <None Include="res\AnalogMath_EXP.bmp" />
+    <None Include="res\analogmath_ge.bmp" />
+    <None Include="res\analogmath_le.bmp" />
+    <None Include="res\analogmath_ln.bmp" />
+    <None Include="res\AnalogMath_LOG.bmp" />
+    <None Include="res\AnalogMath_Modulus.bmp" />
+    <None Include="res\analogmath_multiply.bmp" />
+    <None Include="res\analogmath_ne.bmp" />
+    <None Include="res\AnalogMath_SIN.bmp" />
+    <None Include="res\analogmath_sqr.bmp" />
+    <None Include="res\analogmath_subtract.bmp" />
+    <None Include="res\AnalogMath_TAN.bmp" />
+    <None Include="res\analogmath_ytox.bmp" />
+    <None Include="res\AND.BMP" />
+    <None Include="res\CalculationsAPI24A.bmp" />
+    <None Include="res\CalculationsAPI24B.bmp" />
+    <None Include="res\CalculationsAPI24C.bmp" />
+    <None Include="res\CalculationsAPI24D.bmp" />
+    <None Include="res\CalculationsAPI54A.bmp" />
+    <None Include="res\CalculationsAPI54B.bmp" />
+    <None Include="res\CalculationsAPI54C.bmp" />
+    <None Include="res\CalculationsAPI54D.bmp" />
+    <None Include="res\CALCULATIONSAPI60A.bmp" />
+    <None Include="res\CALCULATIONSAPI60B.bmp" />
+    <None Include="res\CALCULATIONSAPI60C.bmp" />
+    <None Include="res\CALCULATIONSAPI60D.bmp" />
+    <None Include="res\CalculationsAPI6A.bmp" />
+    <None Include="res\CalculationsAPI6B.bmp" />
+    <None Include="res\CalculationsAPI6C.bmp" />
+    <None Include="res\CalculationsAPI6D.bmp" />
+    <None Include="res\CALCULATIONSAPIXX.bmp" />
+    <None Include="res\chkboxs.bmp" />
+    <None Include="res\CMDIN.BMP" />
+    <None Include="res\cmdout.bmp" />
+    <None Include="res\CmdWnd1.ico" />
+    <None Include="res\Comment_Cloud.bmp" />
+    <None Include="res\ControlDER.bmp" />
+    <None Include="res\ControlDEV.bmp" />
+    <None Include="res\ControlFIFO.bmp" />
+    <None Include="res\ControlHYST.bmp" />
+    <None Include="res\ControlINT.bmp" />
+    <None Include="res\ControlLDLG.bmp" />
+    <None Include="res\CONTROLLER.BMP" />
+    <None Include="res\ControlLIFO.bmp" />
+    <None Include="res\ControlMAVG.bmp" />
+    <None Include="res\ControlRAMP.bmp" />
+    <None Include="res\ControlRATIOmon.bmp" />
+    <None Include="res\ControlSUPcompr.bmp" />
+    <None Include="res\ControlTOT.bmp" />
+    <None Include="res\ControlWSUM.bmp" />
+    <None Include="res\ConversionBCDBIN.bmp" />
+    <None Include="res\ConversionBINBCD.bmp" />
+    <None Include="res\ConversionBININT.bmp" />
+    <None Include="res\ConversionINTBIN.bmp" />
+    <None Include="res\ConversionPREC.bmp" />
+    <None Include="res\ConversionTRUN.bmp" />
+    <None Include="res\csb.cur" />
+    <None Include="res\csl.cur" />
+    <None Include="res\csr.cur" />
+    <None Include="res\cst.cur" />
+    <None Include="res\cursor1.cur" />
+    <None Include="res\cursor_pan.cur" />
+    <None Include="res\DETHER.BMP" />
+    <None Include="res\DNCOUNT.BMP" />
+    <None Include="res\dob.cur" />
+    <None Include="res\dol.cur" />
+    <None Include="res\dor.cur" />
+    <None Include="res\dot.cur" />
+    <None Include="res\downcoun.bmp" />
+    <None Include="res\ewsConfig.rc2" />
+    <None Include="res\EWS_ICON_DN.bmp" />
+    <None Include="res\EWS_ICON_SN.bmp" />
+    <None Include="res\FCU_ICON_DR_DN.bmp" />
+    <None Include="res\FCU_ICON_DR_SN.bmp" />
+    <None Include="res\FCU_ICON_SR_DN.bmp" />
+    <None Include="res\FCU_ICON_SR_SN.bmp" />
+    <None Include="res\FillPattern1.bmp" />
+    <None Include="res\FillPattern10.bmp" />
+    <None Include="res\FillPattern11.bmp" />
+    <None Include="res\FillPattern2.bmp" />
+    <None Include="res\FillPattern3.bmp" />
+    <None Include="res\FillPattern4.bmp" />
+    <None Include="res\FillPattern5.bmp" />
+    <None Include="res\FillPattern6.bmp" />
+    <None Include="res\FillPattern7.bmp" />
+    <None Include="res\FillPattern8.bmp" />
+    <None Include="res\FillPattern9.bmp" />
+    <None Include="res\FmctiLogo_100x14.bmp" />
+    <None Include="res\FUNCTION.BMP" />
+    <None Include="res\GradientAcyclic.bmp" />
+    <None Include="res\GradientAcyclic_Down.bmp" />
+    <None Include="res\GradientAcyclic_Left.bmp" />
+    <None Include="res\GradientAcyclic_Right.bmp" />
+    <None Include="res\GradientAcyclic_Up.bmp" />
+    <None Include="res\GradientCyclic.bmp" />
+    <None Include="res\GradientCyclic_Down.bmp" />
+    <None Include="res\GradientCyclic_Left.bmp" />
+    <None Include="res\GradientCyclic_Right.bmp" />
+    <None Include="res\GradientCyclic_Up.bmp" />
+    <None Include="res\GradientElliptic.bmp" />
+    <None Include="res\GradientElliptic_1.bmp" />
+    <None Include="res\GradientElliptic_2.bmp" />
+    <None Include="res\GradientElliptic_3.bmp" />
+    <None Include="res\GradientElliptic_4.bmp" />
+    <None Include="res\GradientElliptic_5.bmp" />
+    <None Include="res\GradientElliptic_6.bmp" />
+    <None Include="res\GradientElliptic_7.bmp" />
+    <None Include="res\GradientElliptic_8.bmp" />
+    <None Include="res\GradientElliptic_9.bmp" />
+    <None Include="res\GradientPreset1.bmp" />
+    <None Include="res\HI_LIMIT.BMP" />
+    <None Include="res\HI_SELECT.BMP" />
+    <None Include="res\ICI.BMP" />
+    <None Include="res\ICO.BMP" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\icon_check.ico" />
+    <None Include="res\ICON_SS_DR_DN.bmp" />
+    <None Include="res\ICON_SS_DR_SN.bmp" />
+    <None Include="res\ICON_SS_SR_DN.bmp" />
+    <None Include="res\ICON_SS_SR_SN.bmp" />
+    <None Include="res\IDB_OTHEROUTPUT.BMP" />
+    <None Include="res\idr_chain.bmp" />
+    <None Include="res\idr_channel.bmp" />
+    <None Include="res\idr_fcu.bmp" />
+    <None Include="res\idr_iocard.bmp" />
+    <None Include="res\idr_loca.bmp" />
+    <None Include="res\idr_location.bmp" />
+    <None Include="res\idr_module.bmp" />
+    <None Include="res\idr_rack.bmp" />
+    <None Include="res\idr_root.bmp" />
+    <None Include="res\IinternalOutDigital.bmp" />
+    <None Include="res\IinternalOutMode.bmp" />
+    <None Include="res\InternaInMode2l.bmp" />
+    <None Include="res\InternalAlarm.bmp" />
+    <None Include="res\InternalAnalog.bmp" />
+    <None Include="res\InternalDigital.bmp" />
+    <None Include="res\InternalFault.bmp" />
+    <None Include="res\InternalInMode1.bmp" />
+    <None Include="res\InternalInMode10.bmp" />
+    <None Include="res\InternalInMode11.bmp" />
+    <None Include="res\InternalInMode12.bmp" />
+    <None Include="res\InternalInMode13.bmp" />
+    <None Include="res\InternalInMode14.bmp" />
+    <None Include="res\InternalInMode15.bmp" />
+    <None Include="res\InternalInMode16.bmp" />
+    <None Include="res\InternalInMode17.bmp" />
+    <None Include="res\InternalInMode18.bmp" />
+    <None Include="res\InternalInMode19.bmp" />
+    <None Include="res\InternalInMode20.bmp" />
+    <None Include="res\InternalInMode21.bmp" />
+    <None Include="res\InternalInMode22.bmp" />
+    <None Include="res\InternalInMode23.bmp" />
+    <None Include="res\InternalInMode24.bmp" />
+    <None Include="res\InternalInMode25.bmp" />
+    <None Include="res\InternalInMode26.bmp" />
+    <None Include="res\InternalInMode27.bmp" />
+    <None Include="res\InternalInMode28.bmp" />
+    <None Include="res\InternalInMode29.bmp" />
+    <None Include="res\InternalInMode3.bmp" />
+    <None Include="res\InternalInMode30.bmp" />
+    <None Include="res\InternalInMode31.bmp" />
+    <None Include="res\InternalInMode32.bmp" />
+    <None Include="res\InternalInMode4.bmp" />
+    <None Include="res\InternalInMode5.bmp" />
+    <None Include="res\InternalInMode6.bmp" />
+    <None Include="res\InternalInMode7.bmp" />
+    <None Include="res\InternalInMode8.bmp" />
+    <None Include="res\InternalInMode9.bmp" />
+    <None Include="res\internalInPrivateAnalog.bmp" />
+    <None Include="res\internalInPrivateDigital.bmp" />
+    <None Include="res\InternalInSetpoint.bmp" />
+    <None Include="res\internalInText.bmp" />
+    <None Include="res\InternalMode.bmp" />
+    <None Include="res\InternalOutAlarm.bmp" />
+    <None Include="res\InternalOutAnalog.bmp" />
+    <None Include="res\InternalOutFault.bmp" />
+    <None Include="res\InternalOutMode1.bmp" />
+    <None Include="res\InternalOutMode10.bmp" />
+    <None Include="res\InternalOutMode11.bmp" />
+    <None Include="res\InternalOutMode12.bmp" />
+    <None Include="res\InternalOutMode13.bmp" />
+    <None Include="res\InternalOutMode14.bmp" />
+    <None Include="res\InternalOutMode15.bmp" />
+    <None Include="res\InternalOutMode16.bmp" />
+    <None Include="res\InternalOutMode17.bmp" />
+    <None Include="res\InternalOutMode18.bmp" />
+    <None Include="res\InternalOutMode19.bmp" />
+    <None Include="res\InternalOutMode2.bmp" />
+    <None Include="res\InternalOutMode20.bmp" />
+    <None Include="res\InternalOutMode21.bmp" />
+    <None Include="res\InternalOutMode22.bmp" />
+    <None Include="res\InternalOutMode23.bmp" />
+    <None Include="res\InternalOutMode24.bmp" />
+    <None Include="res\InternalOutMode25.bmp" />
+    <None Include="res\InternalOutMode26.bmp" />
+    <None Include="res\InternalOutMode27.bmp" />
+    <None Include="res\InternalOutMode28.bmp" />
+    <None Include="res\InternalOutMode29.bmp" />
+    <None Include="res\InternalOutMode3.bmp" />
+    <None Include="res\InternalOutMode30.bmp" />
+    <None Include="res\InternalOutMode31.bmp" />
+    <None Include="res\InternalOutMode32.bmp" />
+    <None Include="res\InternalOutMode4.bmp" />
+    <None Include="res\InternalOutMode5.bmp" />
+    <None Include="res\InternalOutMode6.bmp" />
+    <None Include="res\InternalOutMode7.bmp" />
+    <None Include="res\InternalOutMode8.bmp" />
+    <None Include="res\InternalOutMode9.bmp" />
+    <None Include="res\internalOutPrivateAnalog.bmp" />
+    <None Include="res\internalOutPrivateDigital.bmp" />
+    <None Include="res\InternalOutSetpoint.bmp" />
+    <None Include="res\InternalOutState.bmp" />
+    <None Include="res\internalOutText.bmp" />
+    <None Include="res\internalPrivateAnalog.bmp" />
+    <None Include="res\internalPrivateDigital.bmp" />
+    <None Include="res\InternalState.bmp" />
+    <None Include="res\LO_LIMIT.BMP" />
+    <None Include="res\LO_SELECT.BMP" />
+    <None Include="res\logic_ec.bmp" />
+    <None Include="res\logic_la.bmp" />
+    <None Include="res\logic_le.bmp" />
+    <None Include="res\logic_te.bmp" />
+    <None Include="res\lut.bmp" />
+    <None Include="res\mag_glass.cur" />
+    <None Include="res\mb.cur" />
+    <None Include="res\MINUSBD.BMP" />
+    <None Include="res\MINUSBU.BMP" />
+    <None Include="res\ml.cur" />
+    <None Include="res\mr.cur" />
+    <None Include="res\mt.cur" />
+    <None Include="res\MuxDeMux_DMUX.bmp" />
+    <None Include="res\MuxDemux_MUX.bmp" />
+    <None Include="res\NAND.BMP" />
+    <None Include="res\NOR.BMP" />
+    <None Include="res\NOT.BMP" />
+    <None Include="res\OR.BMP" />
+    <None Include="res\otherinp.bmp" />
+    <None Include="res\otherInPrivateAnalog.bmp" />
+    <None Include="res\otherInPrivateDigital.bmp" />
+    <None Include="res\OtherInputAlarm.bmp" />
+    <None Include="res\OtherInputAnalog.bmp" />
+    <None Include="res\OtherInputCommand.bmp" />
+    <None Include="res\OtherInputDigital.bmp" />
+    <None Include="res\OtherInputFault.bmp" />
+    <None Include="res\OtherInputMode.bmp" />
+    <None Include="res\OtherInputMode1.bmp" />
+    <None Include="res\OtherInputMode10.bmp" />
+    <None Include="res\OtherInputMode11.bmp" />
+    <None Include="res\OtherInputMode12.bmp" />
+    <None Include="res\OtherInputMode13.bmp" />
+    <None Include="res\OtherInputMode14.bmp" />
+    <None Include="res\OtherInputMode15.bmp" />
+    <None Include="res\OtherInputMode16.bmp" />
+    <None Include="res\OtherInputMode17.bmp" />
+    <None Include="res\OtherInputMode18.bmp" />
+    <None Include="res\OtherInputMode19.bmp" />
+    <None Include="res\OtherInputMode2.bmp" />
+    <None Include="res\OtherInputMode20.bmp" />
+    <None Include="res\OtherInputMode21.bmp" />
+    <None Include="res\OtherInputMode22.bmp" />
+    <None Include="res\OtherInputMode23.bmp" />
+    <None Include="res\OtherInputMode24.bmp" />
+    <None Include="res\OtherInputMode25.bmp" />
+    <None Include="res\OtherInputMode26.bmp" />
+    <None Include="res\OtherInputMode27.bmp" />
+    <None Include="res\OtherInputMode28.bmp" />
+    <None Include="res\OtherInputMode29.bmp" />
+    <None Include="res\OtherInputMode3.bmp" />
+    <None Include="res\OtherInputMode30.bmp" />
+    <None Include="res\OtherInputMode31.bmp" />
+    <None Include="res\OtherInputMode32.bmp" />
+    <None Include="res\OtherInputMode4.bmp" />
+    <None Include="res\OtherInputMode5.bmp" />
+    <None Include="res\OtherInputMode6.bmp" />
+    <None Include="res\OtherInputMode7.bmp" />
+    <None Include="res\OtherInputMode8.bmp" />
+    <None Include="res\OtherInputMode9.bmp" />
+    <None Include="res\OtherInputSetpoint.bmp" />
+    <None Include="res\OtherInputState.bmp" />
+    <None Include="res\otherInText.bmp" />
+    <None Include="res\otherOutPrivateAnalog.bmp" />
+    <None Include="res\otherOutPrivateDigital.bmp" />
+    <None Include="res\OtherOutputAlarm.bmp" />
+    <None Include="res\OtherOutputAnalog.bmp" />
+    <None Include="res\OtherOutputCommand.bmp" />
+    <None Include="res\OtherOutputDigital.bmp" />
+    <None Include="res\OtherOutputFault.bmp" />
+    <None Include="res\OtherOutputMode.bmp" />
+    <None Include="res\OtherOutputMode1.bmp" />
+    <None Include="res\OtherOutputMode10.bmp" />
+    <None Include="res\OtherOutputMode11.bmp" />
+    <None Include="res\OtherOutputMode12.bmp" />
+    <None Include="res\OtherOutputMode13.bmp" />
+    <None Include="res\OtherOutputMode14.bmp" />
+    <None Include="res\OtherOutputMode15.bmp" />
+    <None Include="res\OtherOutputMode16.bmp" />
+    <None Include="res\OtherOutputMode17.bmp" />
+    <None Include="res\OtherOutputMode18.bmp" />
+    <None Include="res\OtherOutputMode19.bmp" />
+    <None Include="res\OtherOutputMode2.bmp" />
+    <None Include="res\OtherOutputMode20.bmp" />
+    <None Include="res\OtherOutputMode21.bmp" />
+    <None Include="res\OtherOutputMode22.bmp" />
+    <None Include="res\OtherOutputMode23.bmp" />
+    <None Include="res\OtherOutputMode24.bmp" />
+    <None Include="res\OtherOutputMode25.bmp" />
+    <None Include="res\OtherOutputMode26.bmp" />
+    <None Include="res\OtherOutputMode27.bmp" />
+    <None Include="res\OtherOutputMode28.bmp" />
+    <None Include="res\OtherOutputMode29.bmp" />
+    <None Include="res\OtherOutputMode3.bmp" />
+    <None Include="res\OtherOutputMode30.bmp" />
+    <None Include="res\OtherOutputMode31.bmp" />
+    <None Include="res\OtherOutputMode32.bmp" />
+    <None Include="res\OtherOutputMode4.bmp" />
+    <None Include="res\OtherOutputMode5.bmp" />
+    <None Include="res\OtherOutputMode6.bmp" />
+    <None Include="res\OtherOutputMode7.bmp" />
+    <None Include="res\OtherOutputMode8.bmp" />
+    <None Include="res\OtherOutputMode9.bmp" />
+    <None Include="res\OtherOutputSetpoint.bmp" />
+    <None Include="res\OtherOutputState.bmp" />
+    <None Include="res\otherOutText.bmp" />
+    <None Include="res\OWS_ICON_DN.bmp" />
+    <None Include="res\OWS_ICON_SN.bmp" />
+    <None Include="res\PLUSBD.BMP" />
+    <None Include="res\PLUSBU.BMP" />
+    <None Include="res\PRINTER_ICON_DN.bmp" />
+    <None Include="res\PRINTER_ICON_NN.bmp" />
+    <None Include="res\PRINTER_ICON_SN.bmp" />
+    <None Include="res\prt.BMP" />
+    <None Include="res\pvb.cur" />
+    <None Include="res\pvl.cur" />
+    <None Include="res\pvr.cur" />
+    <None Include="res\pvt.cur" />
+    <None Include="res\RealInAnalog.bmp" />
+    <None Include="res\RealInAnalogWPt.bmp" />
+    <None Include="res\RealInDigital.bmp" />
+    <None Include="res\RealInDigitalWPt.bmp" />
+    <None Include="res\realInputText.bmp" />
+    <None Include="res\realInputTextWp.bmp" />
+    <None Include="res\RealOutAnalog.bmp" />
+    <None Include="res\RealOutAnalogWPt.bmp" />
+    <None Include="res\RealOutDigital.bmp" />
+    <None Include="res\RealOutDigitalWPt.bmp" />
+    <None Include="res\realOutputText.bmp" />
+    <None Include="res\realOutTextWp.bmp" />
+    <None Include="res\retOtherInText.bmp" />
+    <None Include="res\ret_internalInPrivateAnalog.bmp" />
+    <None Include="res\ret_internalInPrivateDigital.bmp" />
+    <None Include="res\ret_internalinput.bmp" />
+    <None Include="res\ret_internalInText.bmp" />
+    <None Include="res\ret_internalOutPrivateAnalog.bmp" />
+    <None Include="res\ret_internalOutPrivateDigital.bmp" />
+    <None Include="res\ret_internaloutput.bmp" />
+    <None Include="res\ret_internalPrivateAnalog.bmp" />
+    <None Include="res\ret_internalPrivateDigital.bmp" />
+    <None Include="res\Ret_IntInAlarm.bmp" />
+    <None Include="res\Ret_IntInAnalog.bmp" />
+    <None Include="res\Ret_IntInDigital.bmp" />
+    <None Include="res\Ret_IntInFault.bmp" />
+    <None Include="res\Ret_IntInMode.bmp" />
+    <None Include="res\Ret_IntInMode1.bmp" />
+    <None Include="res\Ret_IntInMode10.bmp" />
+    <None Include="res\Ret_IntInMode11.bmp" />
+    <None Include="res\Ret_IntInMode12.bmp" />
+    <None Include="res\Ret_IntInMode13.bmp" />
+    <None Include="res\Ret_IntInMode14.bmp" />
+    <None Include="res\Ret_IntInMode15.bmp" />
+    <None Include="res\Ret_IntInMode16.bmp" />
+    <None Include="res\Ret_IntInMode17.bmp" />
+    <None Include="res\Ret_IntInMode18.bmp" />
+    <None Include="res\Ret_IntInMode19.bmp" />
+    <None Include="res\Ret_IntInMode2.bmp" />
+    <None Include="res\Ret_IntInMode20.bmp" />
+    <None Include="res\Ret_IntInMode21.bmp" />
+    <None Include="res\Ret_IntInMode22.bmp" />
+    <None Include="res\Ret_IntInMode23.bmp" />
+    <None Include="res\Ret_IntInMode24.bmp" />
+    <None Include="res\Ret_IntInMode25.bmp" />
+    <None Include="res\Ret_IntInMode26.bmp" />
+    <None Include="res\Ret_IntInMode27.bmp" />
+    <None Include="res\Ret_IntInMode28.bmp" />
+    <None Include="res\Ret_IntInMode29.bmp" />
+    <None Include="res\Ret_IntInMode3.bmp" />
+    <None Include="res\Ret_IntInMode30.bmp" />
+    <None Include="res\Ret_IntInMode31.bmp" />
+    <None Include="res\Ret_IntInMode32.bmp" />
+    <None Include="res\Ret_IntInMode4.bmp" />
+    <None Include="res\Ret_IntInMode5.bmp" />
+    <None Include="res\Ret_IntInMode6.bmp" />
+    <None Include="res\Ret_IntInMode7.bmp" />
+    <None Include="res\Ret_IntInMode8.bmp" />
+    <None Include="res\Ret_IntInMode9.bmp" />
+    <None Include="res\Ret_IntInSetpoint.bmp" />
+    <None Include="res\Ret_IntInState.bmp" />
+    <None Include="res\Ret_IntOutAlarm.bmp" />
+    <None Include="res\Ret_IntOutAnalog.bmp" />
+    <None Include="res\Ret_IntOutDigital.bmp" />
+    <None Include="res\Ret_IntOutFault.bmp" />
+    <None Include="res\Ret_IntOutMode.bmp" />
+    <None Include="res\Ret_IntOutMode1.bmp" />
+    <None Include="res\Ret_IntOutMode10.bmp" />
+    <None Include="res\Ret_IntOutMode11.bmp" />
+    <None Include="res\Ret_IntOutMode12.bmp" />
+    <None Include="res\Ret_IntOutMode13.bmp" />
+    <None Include="res\Ret_IntOutMode14.bmp" />
+    <None Include="res\Ret_IntOutMode15.bmp" />
+    <None Include="res\Ret_IntOutMode16.bmp" />
+    <None Include="res\Ret_IntOutMode17.bmp" />
+    <None Include="res\Ret_IntOutMode18.bmp" />
+    <None Include="res\Ret_IntOutMode19.bmp" />
+    <None Include="res\Ret_IntOutMode2.bmp" />
+    <None Include="res\Ret_IntOutMode20.bmp" />
+    <None Include="res\Ret_IntOutMode21.bmp" />
+    <None Include="res\Ret_IntOutMode22.bmp" />
+    <None Include="res\Ret_IntOutMode23.bmp" />
+    <None Include="res\Ret_IntOutMode24.bmp" />
+    <None Include="res\Ret_IntOutMode25.bmp" />
+    <None Include="res\Ret_IntOutMode26.bmp" />
+    <None Include="res\Ret_IntOutMode27.bmp" />
+    <None Include="res\Ret_IntOutMode28.bmp" />
+    <None Include="res\Ret_IntOutMode29.bmp" />
+    <None Include="res\Ret_IntOutMode3.bmp" />
+    <None Include="res\Ret_IntOutMode30.bmp" />
+    <None Include="res\Ret_IntOutMode31.bmp" />
+    <None Include="res\Ret_IntOutMode32.bmp" />
+    <None Include="res\Ret_IntOutMode4.bmp" />
+    <None Include="res\Ret_IntOutMode5.bmp" />
+    <None Include="res\Ret_IntOutMode6.bmp" />
+    <None Include="res\Ret_IntOutMode7.bmp" />
+    <None Include="res\Ret_IntOutMode8.bmp" />
+    <None Include="res\Ret_IntOutMode9.bmp" />
+    <None Include="res\Ret_IntOutSetpoint.bmp" />
+    <None Include="res\Ret_IntOutState.bmp" />
+    <None Include="res\ret_intOutText.bmp" />
+    <None Include="res\ret_othe.bmp" />
+    <None Include="res\ret_otherInPrivateAnalog.bmp" />
+    <None Include="res\ret_otherInPrivateDigital.bmp" />
+    <None Include="res\Ret_OtherInput.bmp" />
+    <None Include="res\Ret_OtherInputAlarm.bmp" />
+    <None Include="res\Ret_OtherInputAnalog.bmp" />
+    <None Include="res\Ret_OtherInputCommand.bmp" />
+    <None Include="res\Ret_OtherInputDigital.bmp" />
+    <None Include="res\Ret_OtherInputFault.bmp" />
+    <None Include="res\Ret_OtherInputMode.bmp" />
+    <None Include="res\Ret_OtherInputMode1.bmp" />
+    <None Include="res\Ret_OtherInputMode10.bmp" />
+    <None Include="res\Ret_OtherInputMode11.bmp" />
+    <None Include="res\Ret_OtherInputMode12.bmp" />
+    <None Include="res\Ret_OtherInputMode13.bmp" />
+    <None Include="res\Ret_OtherInputMode14.bmp" />
+    <None Include="res\Ret_OtherInputMode15.bmp" />
+    <None Include="res\Ret_OtherInputMode16.bmp" />
+    <None Include="res\Ret_OtherInputMode17.bmp" />
+    <None Include="res\Ret_OtherInputMode18.bmp" />
+    <None Include="res\Ret_OtherInputMode19.bmp" />
+    <None Include="res\Ret_OtherInputMode2.bmp" />
+    <None Include="res\Ret_OtherInputMode20.bmp" />
+    <None Include="res\Ret_OtherInputMode21.bmp" />
+    <None Include="res\Ret_OtherInputMode22.bmp" />
+    <None Include="res\Ret_OtherInputMode23.bmp" />
+    <None Include="res\Ret_OtherInputMode24.bmp" />
+    <None Include="res\Ret_OtherInputMode25.bmp" />
+    <None Include="res\Ret_OtherInputMode26.bmp" />
+    <None Include="res\Ret_OtherInputMode27.bmp" />
+    <None Include="res\Ret_OtherInputMode28.bmp" />
+    <None Include="res\Ret_OtherInputMode29.bmp" />
+    <None Include="res\Ret_OtherInputMode3.bmp" />
+    <None Include="res\Ret_OtherInputMode30.bmp" />
+    <None Include="res\Ret_OtherInputMode31.bmp" />
+    <None Include="res\Ret_OtherInputMode32.bmp" />
+    <None Include="res\Ret_OtherInputMode4.bmp" />
+    <None Include="res\Ret_OtherInputMode5.bmp" />
+    <None Include="res\Ret_OtherInputMode6.bmp" />
+    <None Include="res\Ret_OtherInputMode7.bmp" />
+    <None Include="res\Ret_OtherInputMode8.bmp" />
+    <None Include="res\Ret_OtherInputMode9.bmp" />
+    <None Include="res\Ret_OtherInputSetpoint.bmp" />
+    <None Include="res\Ret_OtherInputState.bmp" />
+    <None Include="res\ret_otherOutPrivateAnalog.bmp" />
+    <None Include="res\ret_otherOutPrivateDigital.bmp" />
+    <None Include="res\Ret_OtherOutput.bmp" />
+    <None Include="res\Ret_OtherOutputAlarm.bmp" />
+    <None Include="res\Ret_OtherOutputAnalog.bmp" />
+    <None Include="res\Ret_OtherOutputCommand.bmp" />
+    <None Include="res\Ret_OtherOutputDigital.bmp" />
+    <None Include="res\Ret_OtherOutputFault.bmp" />
+    <None Include="res\Ret_OtherOutputMode.bmp" />
+    <None Include="res\Ret_OtherOutputMode1.bmp" />
+    <None Include="res\Ret_OtherOutputMode10.bmp" />
+    <None Include="res\Ret_OtherOutputMode11.bmp" />
+    <None Include="res\Ret_OtherOutputMode12.bmp" />
+    <None Include="res\Ret_OtherOutputMode13.bmp" />
+    <None Include="res\Ret_OtherOutputMode14.bmp" />
+    <None Include="res\Ret_OtherOutputMode15.bmp" />
+    <None Include="res\Ret_OtherOutputMode16.bmp" />
+    <None Include="res\Ret_OtherOutputMode17.bmp" />
+    <None Include="res\Ret_OtherOutputMode18.bmp" />
+    <None Include="res\Ret_OtherOutputMode19.bmp" />
+    <None Include="res\Ret_OtherOutputMode2.bmp" />
+    <None Include="res\Ret_OtherOutputMode20.bmp" />
+    <None Include="res\Ret_OtherOutputMode21.bmp" />
+    <None Include="res\Ret_OtherOutputMode22.bmp" />
+    <None Include="res\Ret_OtherOutputMode23.bmp" />
+    <None Include="res\Ret_OtherOutputMode24.bmp" />
+    <None Include="res\Ret_OtherOutputMode25.bmp" />
+    <None Include="res\Ret_OtherOutputMode26.bmp" />
+    <None Include="res\Ret_OtherOutputMode27.bmp" />
+    <None Include="res\Ret_OtherOutputMode28.bmp" />
+    <None Include="res\Ret_OtherOutputMode29.bmp" />
+    <None Include="res\Ret_OtherOutputMode3.bmp" />
+    <None Include="res\Ret_OtherOutputMode30.bmp" />
+    <None Include="res\Ret_OtherOutputMode31.bmp" />
+    <None Include="res\Ret_OtherOutputMode32.bmp" />
+    <None Include="res\Ret_OtherOutputMode4.bmp" />
+    <None Include="res\Ret_OtherOutputMode5.bmp" />
+    <None Include="res\Ret_OtherOutputMode6.bmp" />
+    <None Include="res\Ret_OtherOutputMode7.bmp" />
+    <None Include="res\Ret_OtherOutputMode8.bmp" />
+    <None Include="res\Ret_OtherOutputMode9.bmp" />
+    <None Include="res\Ret_OtherOutputSetpoint.bmp" />
+    <None Include="res\Ret_OtherOutputState.bmp" />
+    <None Include="res\ret_OtherOutText.bmp" />
+    <None Include="res\RWCI.BMP" />
+    <None Include="res\RWCO.BMP" />
+    <None Include="res\SelectionLIM.bmp" />
+    <None Include="res\SelectionMAX.bmp" />
+    <None Include="res\SelectionMIN.bmp" />
+    <None Include="res\SETHER.BMP" />
+    <None Include="res\SETPTIN.BMP" />
+    <None Include="res\SIGMONEQ.BMP" />
+    <None Include="res\SIGMONGT.BMP" />
+    <None Include="res\SIGMONLT.BMP" />
+    <None Include="res\size.bmp" />
+    <None Include="res\spb.cur" />
+    <None Include="res\spl.cur" />
+    <None Include="res\spout.bmp" />
+    <None Include="res\spr.cur" />
+    <None Include="res\spt.cur" />
+    <None Include="res\StatisticalAVG.bmp" />
+    <None Include="res\StatisticalMAX.bmp" />
+    <None Include="res\StatisticalMIN.bmp" />
+    <None Include="res\stcf.bmp" />
+    <None Include="res\str_atof.bmp" />
+    <None Include="res\str_cmp.bmp" />
+    <None Include="res\str_concat.bmp" />
+    <None Include="res\str_find_sub.bmp" />
+    <None Include="res\str_ftoa.bmp" />
+    <None Include="res\str_left.bmp" />
+    <None Include="res\str_length.bmp" />
+    <None Include="res\str_mid.bmp" />
+    <None Include="res\str_right.bmp" />
+    <None Include="res\str_to_lower.bmp" />
+    <None Include="res\str_to_upper.bmp" />
+    <None Include="res\style.bmp" />
+    <None Include="res\SWITCH.BMP" />
+    <None Include="res\TDI.BMP" />
+    <None Include="res\TDT.BMP" />
+    <None Include="res\tdt1.bmp" />
+    <None Include="res\TimeOfDay.bmp" />
+    <None Include="res\TPO.BMP" />
+    <None Include="res\TRANSMITTER.BMP" />
+    <None Include="res\treetypes.bmp" />
+    <None Include="res\UNDEFDIN.BMP" />
+    <None Include="res\UndefOut.bmp" />
+    <None Include="res\UPCOUNT.BMP" />
+    <None Include="res\x1b.cur" />
+    <None Include="res\x1l.cur" />
+    <None Include="res\x1r.cur" />
+    <None Include="res\x1t.cur" />
+    <None Include="res\x2b.cur" />
+    <None Include="res\x2l.cur" />
+    <None Include="res\x2r.cur" />
+    <None Include="res\x2t.cur" />
+    <None Include="res\x3b.cur" />
+    <None Include="res\x3l.cur" />
+    <None Include="res\x3r.cur" />
+    <None Include="res\x3t.cur" />
+    <None Include="res\XNOR.bmp" />
+    <None Include="res\XOR.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="SLSchema.odl">
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</MkTypLibCompatible>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </HeaderFileName>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</MkTypLibCompatible>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </HeaderFileName>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</MkTypLibCompatible>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </HeaderFileName>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</MkTypLibCompatible>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </HeaderFileName>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDialogWithVersioning.h" />
+    <ClInclude Include="AboutDialogWOutVersioning.h" />
+    <ClInclude Include="AddAlarmHeaderDlg.h" />
+    <ClInclude Include="AORManager.h" />
+    <ClInclude Include="AuditTrail.h" />
+    <ClInclude Include="BatchDeviceHelper.h" />
+    <ClInclude Include="BatchExportProject.h" />
+    <ClInclude Include="ConfigRetentiveSPMemMap.h" />
+    <ClInclude Include="CopyMouseButtonConfigDlg.h" />
+    <ClInclude Include="DBDownload.h" />
+    <ClInclude Include="DefineGraphDataDlg.h" />
+    <ClInclude Include="DefineGraphTagsDlg.h" />
+    <ClInclude Include="DefineTableTagsDlg.h" />
+    <ClInclude Include="DefineTableValueDlg.h" />
+    <ClInclude Include="DeviceReferenceDlg.h" />
+    <ClInclude Include="DSAccess.h" />
+    <ClInclude Include="DSAccessCommon.h" />
+    <ClInclude Include="DSAccessMsg.h" />
+    <ClInclude Include="DynamicMap.h" />
+    <ClInclude Include="EditAlarmHeaderDlg.h" />
+    <ClInclude Include="EditAlarmValueDlg.h" />
+    <ClInclude Include="EditColHeaderDlg.h" />
+    <ClInclude Include="EditGraphDataSQLDlg.h" />
+    <ClInclude Include="EditGraphPenDlg.h" />
+    <ClInclude Include="EditGraphTagDlg.h" />
+    <ClInclude Include="EditTableFontDlg.h" />
+    <ClInclude Include="EditTableTagDlg.h" />
+    <ClInclude Include="EditTableValueDlg.h" />
+    <ClInclude Include="EditGraphDataTrendDlg.h" />
+    <ClInclude Include="EditTrendPointDlg.h" />
+    <ClInclude Include="ExportHMI.h" />
+    <ClInclude Include="ExportImportStatusDlg.h" />
+    <ClInclude Include="ExportProject.h" />
+    <ClInclude Include="ExternalTrendCnfgDlg.h" />
+    <ClInclude Include="ExternalTrends.h" />
+    <ClInclude Include="ExtTrendDefConfigDlg.h" />
+    <ClInclude Include="FcuProxyConnOrderCache.h" />
+    <ClInclude Include="FillDirectionComboBox.h" />
+    <ClInclude Include="FillInteriorComboBox.h" />
+    <ClInclude Include="FillPatternButton.h" />
+    <ClInclude Include="GroupFlagDefaultReg.h" />
+    <ClInclude Include="GroupFlagDefaults.h" />
+    <ClInclude Include="GroupFlagsPg.h" />
+    <ClInclude Include="GUISecurityServer.h" />
+    <ClInclude Include="GXml.h" />
+    <ClInclude Include="IOAssignUtil.h" />
+    <ClInclude Include="IoImportAssign.h" />
+    <ClInclude Include="ModifyIOCardTypeDlg.h" />
+    <ClInclude Include="MurmurHash3.h" />
+    <ClInclude Include="OpenSSLMfc.h" />
+    <ClInclude Include="Picture.h" />
+    <ClInclude Include="PictureCtrl.h" />
+    <ClInclude Include="PJNLoadLibraryFromSystem32.h" />
+    <ClInclude Include="RAUserDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SCRIPcon.h" />
+    <ClInclude Include="SecurityServer.h" />
+    <ClInclude Include="SecurityServerDlg.h" />
+    <ClInclude Include="SelectFloatDlg.h" />
+    <ClInclude Include="SelectTableGraphInfoDlg.h" />
+    <ClInclude Include="SetGraphDlg.h" />
+    <ClInclude Include="SetTableDlg.h" />
+    <ClInclude Include="ShareImportGarbageCollector.h" />
+    <ClInclude Include="SLDynaBison.h" />
+    <ClInclude Include="SLDynaDriver.h" />
+    <ClInclude Include="SLDynaScanner.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StringDevPropDlg.h" />
+    <ClInclude Include="TemplateACE.h" />
+    <ClInclude Include="TemplateSecurityManager.h" />
+    <ClInclude Include="TemplatizedDataManager.h" />
+    <ClInclude Include="tinystr.h" />
+    <ClInclude Include="tinyxml.h" />
+    <ClInclude Include="tiodbc.hpp" />
+    <ClInclude Include="UACE.h" />
+    <ClInclude Include="UAlarmChg.h" />
+    <ClInclude Include="UAlarmColumn.h" />
+    <ClInclude Include="UArea.h" />
+    <ClInclude Include="UcosDataSource.h" />
+    <ClInclude Include="UGraphDataDef.h" />
+    <ClInclude Include="UGraphDataSQL.h" />
+    <ClInclude Include="UGraphDataTrend.h" />
+    <ClInclude Include="UGraphPen.h" />
+    <ClInclude Include="UGraphTagDef.h" />
+    <ClInclude Include="UMotherboardDevicePage.h" />
+    <ClInclude Include="UMotherboardTab.h" />
+    <ClInclude Include="UTableColumn.h" />
+    <ClInclude Include="UTableTagDef.h" />
+    <ClInclude Include="UTableValueAlarm.h" />
+    <ClInclude Include="UTableValueDef.h" />
+    <ClInclude Include="UTableValueSQL.h" />
+    <ClInclude Include="UTrendPoint.h" />
+    <ClInclude Include="WndResizer.h" />
+    <ClInclude Include="XmlTree.h" />
+    <ClInclude Include="ZipLib.h" />
+    <ClInclude Include="zlibengn.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ewsConfig.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\COMMON\GWMan\GWMan.vcxproj">
+      <Project>{cb64dcb6-ea8d-4e4b-98a3-46f7ecdc8704}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\COMMON\License\LicLib.vcxproj">
+      <Project>{3bf5666a-489a-4e14-8909-e25c8ec2cec4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\COMMON\OemLib\OemLib.vcxproj">
+      <Project>{b6752aae-7526-4c01-9b02-c3d6749b82a7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\COMMON\PIRTC\PIRTC.vcxproj">
+      <Project>{5e4635db-e462-4c30-9c88-37c978821f98}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\COMMON\RALib\RALib.vcxproj">
+      <Project>{55649407-a740-42db-b80c-efb8b1d6b00b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\COMMON\Sqlite\sqlite.vcxproj">
+      <Project>{6cf16976-2430-4a36-a9bd-a70472b33f17}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\COMMON\StoicLib\StoicLib.vcxproj">
+      <Project>{ff700ce2-8a38-4607-ad35-c6525c2b56e9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\COMMON\UCOSODBC\ucosodbc.vcxproj">
+      <Project>{989a1f42-2ddf-4683-a5f0-0d6c222d9099}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\COMMON\zlib\zlib.vcxproj">
+      <Project>{3a94fd6f-4dc8-48b7-8b8f-120258eebb6f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ewsColl\ewsColl.vcxproj">
+      <Project>{0d3b9828-aa62-4281-b202-9c4ac6bb6fcd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\muews\muews_client\muews_client.vcxproj">
+      <Project>{3af468e0-3ea3-4f4c-a4a1-6d11a768c095}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\PCTree32\Pctree32.vcxproj">
+      <Project>{a33eec1e-7fb9-45d4-8e03-6c8a14a36b7b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\schema\schema.vcxproj">
+      <Project>{890acd67-9f75-422d-85f5-e7273f5cd5a1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ewsConfig.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</NotProject>

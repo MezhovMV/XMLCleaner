@@ -1,0 +1,6 @@
+"ewsConfig.Cleaned.vcxproj" is cleaned
+"ewsConfig.vcxproj" is cleaned
+"NotProject.vcxproj" is not VsProject
+"notxml.vcxproj" is not XML
+"Projects.Cleaned.vcxproj" is cleaned
+"Projects.vcxproj" is cleaned

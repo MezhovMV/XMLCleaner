@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\mmezh\source\repos\XMLCleaner\XMLCleaner\Test.h(49,5): warning C4002: слишком много аргументов для вызова макроса, подобного функции, "assert"
+  XMLCleaner.vcxproj -> C:\Users\mmezh\source\repos\XMLCleaner\x64\Debug\XMLCleaner.exe
