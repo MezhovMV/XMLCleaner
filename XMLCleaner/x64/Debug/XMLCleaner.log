@@ -1,3 +1,4 @@
 ﻿  main.cpp
-C:\Users\mmezh\source\repos\XMLCleaner\XMLCleaner\Test.h(49,5): warning C4002: слишком много аргументов для вызова макроса, подобного функции, "assert"
+C:\Users\mmezh\source\repos\XMLCleaner\XMLCleaner\Test.h(51,5): warning C4002: слишком много аргументов для вызова макроса, подобного функции, "assert"
+C:\Users\mmezh\source\repos\XMLCleaner\XMLCleaner\main.cpp(45,38): warning C4101: ex: неиспользованная локальная переменная
   XMLCleaner.vcxproj -> C:\Users\mmezh\source\repos\XMLCleaner\x64\Debug\XMLCleaner.exe

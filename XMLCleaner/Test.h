@@ -26,7 +26,9 @@ void RunTests() {
                 log << p.path().filename() << " is not VsProject" << std::endl;
             }
             if (Found_Test(p, rx) && IsXml(p) && IsProject(p)) {
+                CleanWin32(p);
                 log << p.path().filename() << " is cleaned" << std::endl;
+                fs::remove(GetResultName(p));
             }
 
         }
@@ -48,5 +50,6 @@ void RunTests() {
     std::string result_log = line_log + '\n' + line_log2 + '\n' + line_log3 + '\n' + line_log4;
     assert(file_contents.c_str(), result_log.c_str());
     std::cout << "Test finished succesfully" <<std::endl;
+
     return;
 }

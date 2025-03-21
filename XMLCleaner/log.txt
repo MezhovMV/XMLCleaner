@@ -1,6 +1,10 @@
+"ewsConfig.Cleaned.Cleaned.Cleaned.vcxproj" is cleaned
+"ewsConfig.Cleaned.Cleaned.vcxproj" is cleaned
 "ewsConfig.Cleaned.vcxproj" is cleaned
 "ewsConfig.vcxproj" is cleaned
 "NotProject.vcxproj" is not VsProject
 "notxml.vcxproj" is not XML
+"Projects.Cleaned.Cleaned.Cleaned.vcxproj" is cleaned
+"Projects.Cleaned.Cleaned.vcxproj" is cleaned
 "Projects.Cleaned.vcxproj" is cleaned
 "Projects.vcxproj" is cleaned
